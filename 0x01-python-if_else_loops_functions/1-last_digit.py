@@ -6,7 +6,7 @@ if rand_number >= 0:
 else:
     last_digit = rand_number % -10
 print("Last digit of", rand_number, "is", last_digit, end=' ')
-if last_digit < 6 and not 0:
+if last_digit < 6 and last_digit != 0:
     print("and is less than 6 and not 0")
 elif last_digit == 0:
     print("and is 0")
