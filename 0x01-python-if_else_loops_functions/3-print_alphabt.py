@@ -1,4 +1,4 @@
 #!/usr/bin/python3
-for indx in range(97, 123):
-    if (indx != 101 and indx != 113):
-        print('{:c}'.format(indx))
+for alpha in range(ord('a'), ord('z') + 1):
+    if chr(alpha) != 'e' and chr(alpha) != 'q':
+        print("{:c}".format(alpha), end='')
