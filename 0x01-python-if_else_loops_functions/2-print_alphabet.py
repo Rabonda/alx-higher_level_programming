@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-for indx in range(97, 123):
-    print('{:c}'.format(indx), end='')
+for alpha in range(ord('a'), ord('z') + 1):
+    print("{:c}".format(alpha), end='')
