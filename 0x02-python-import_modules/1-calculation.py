@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-from calculator_1 import add, sub, mul, div
 def calculator():
     a = 10
     b = 5
@@ -9,4 +8,5 @@ def calculator():
     print("{:d} / {:d} = {:d}".format(a, b, div(a, b)))
 
 if __name__ == "__main__":
+    from calculator_1 import add, sub, mul, div
     calculator()
