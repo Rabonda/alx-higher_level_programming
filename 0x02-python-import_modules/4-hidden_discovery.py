@@ -1,11 +1,6 @@
-#!/usr/bin/python3.4
-def hidden_discovery():
-    hide = dir(hidden_4)
-    for indx in hide:
-        if(indx [:2] != "__"):
-            print(indx)
-
-
+#!/usr/bin/python3
 if __name__ == "__main__":
     import hidden_4
-    hidden_discovery()
+    for i in dir(hidden_4):
+        if "__" not in i:
+            print(i)
