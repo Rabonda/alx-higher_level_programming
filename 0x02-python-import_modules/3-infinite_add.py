@@ -4,6 +4,8 @@ def add():
     for indx in range(1, len(sys.argv)):
         total = total + int(sys.argv[indx])
     print(total)
+
+
 if __name__ == "__main__":
     import sys
     add()
