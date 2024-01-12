@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
     if a_dictionary:
-        a = sorted((value, key)
+        dictionary_2 = sorted((value, key)
                    for (key, value) in a_dictionary.items()).pop()[1]
-        return (a)
+        return (dictionary_2)
