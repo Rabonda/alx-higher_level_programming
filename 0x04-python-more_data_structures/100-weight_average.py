@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
-    if my_list:
-        multiply = 0
-        sum = 0
-        for indx in my_list:
-            multiply = indx + i[0] * indx[1]
-            sum = sum + indx[1]
-        return (multiply / sum)
-    else:
-        return (0)
+    if not my_list:
+        return 0
+    average = 0
+    div = 0
+    for tup in my_list:
+        average += tup[0] * tup[1]
+        div += tup[1]
+    return float(average / div)
