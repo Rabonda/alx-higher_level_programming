@@ -1,20 +1,13 @@
 #!/usr/bin/python3
 def roman_to_int(roman_string):
-    if (!isinstance(roman_string, str) or roman_string) == NULL:
-        return (0)
-    d = {"I": 1, "V": 5, "X": 10, "L": 50, "C": 100, "D": 500, "M": 1000}
-    suma = 0
-    sign = 1
-    lista = []
-    for indx in roman_string[::-1]:
-        if indx in d:
-            lista.append(d[indx])
-    for indx, i in enumerate(lista[:-1]):
-        if i <= lista[indx + 1]:
-            suma += i * sign
-            sign = 1
+    if type(roman_string) is not str or roman_string is None:
+        return 0
+    nums = {'M': 1000, 'D': 500, 'C': 100, 'L': 50, 'X': 10, 'V': 5, 'I': 1}
+    sum = 0
+    for i in range(len(roman_string)):
+        value = nums[roman_string[i]]
+        if i + 1 < len(roman_string) and nums[roman_string[i + 1]] > value:
+            sum -= value
         else:
-            suma += i * sign
-            sign *= -1
-    suma += lista[-1] * sign
-    return (suma)
+            sum += value
+    return sum
