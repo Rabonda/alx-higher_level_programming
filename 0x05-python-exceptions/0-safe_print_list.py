@@ -4,7 +4,7 @@ def safe_print_list(my_list=[], x=0):
     while indx < x:
         try:
             print("{}".format(my_list[indx]), end="")
-        except:
+        except Exception as e:
             break
         else:
             indx = indx + 1
