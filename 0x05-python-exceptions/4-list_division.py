@@ -1,9 +1,10 @@
 #!/usr/bin/python3
 def list_division(my_list_1, my_list_2, list_length):
     quotients = []
-    while index < list_length:
+    iCount = 0
+    while iCount < list_length:
         try:
-            quotient = my_list_1[index] / my_list_2[index]
+            quotient = my_list_1[iCount] / my_list_2[iCount]
         except TypeError:
             quotient = 0
             print("wrong type")
@@ -15,5 +16,5 @@ def list_division(my_list_1, my_list_2, list_length):
             print("division by 0")
         finally:
             quotients.append(quotient)
-        index += 1
+        iCount += 1
     return quotients
