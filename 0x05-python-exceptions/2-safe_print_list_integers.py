@@ -8,6 +8,6 @@ def safe_print_list_integers(my_list=[], x=0):
             indx = indx + 1
         except (TypeError, ValueError):
             pass
-        coun++;
+        coun = coun + 1;
     print()
     return indx
