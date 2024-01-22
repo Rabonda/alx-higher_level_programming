@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def safe_print_list(my_list=[], x=0):
-    ind = 0
-
+    i = 0
     try:
-        for ; ind < x; ind++:
-            print("{:d}".format(my_list[ind]), end="")
+        while i < x:
+            print("{:d}".format(my_list[i]), end="")
+            i += 1
     except:
         pass
     print()
-    return ind
+    return i
