@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 def magic_calculation(a, b):
-    r = 0
-    for indx in range(1, 3):
+    result = 0
+    for i in range(1, 3):
         try:
-            if indx > a:
+            if i > a:
                 raise Exception('Too far')
-            r = r + (a ** b) / indx
-        except:
-            r = a + b
+            else:
+                result += (a ** b) / i
+        except Exception:
+            result = b + a
             break
-    return r
+    return (result)
